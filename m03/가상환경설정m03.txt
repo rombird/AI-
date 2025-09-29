@@ -1,0 +1,14 @@
+miniconda 설치(폴더 위치 c:\miniconda) - c드라이브에 miniconda 폴더 만들어서 설치
+anaconda prompt 
+-> 
+cd.. 
+cd..
+cd miniconda
+conda config --show channels (conda-forge가 맨 위에 있는거 확인)
+conda create --prefix C:\miniconda\envs\m03 python=3.12 -y
+conda info --envs (m03 위치확인)
+conda activate m03 ((base) -> (m03)으로 바뀐 것 확인)
+conda install ipykernel (커널잡아주기) 
+
+vsc켜서 파일 -> 새창 -> 탐색기 -> c드라이브에 m03 폴더 만들어서 선택 -> 명령팔레트 -> 
+python: 인터프리터 선택 -> 가상환경 설정한 m03 선택
